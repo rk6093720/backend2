@@ -1,10 +1,10 @@
 
 const express = require("express")
 const cors = require("cors")
-const {userController} = require("../backend/routes/User.routes")
+const {userController} = require("./routes/User.routes")
 
 const {connection} = require("./config/db")
-const {authentication} = require("../backend/middleware/authentication.middleware")
+const {authentication} = require("./middleware/authentication.middleware")
 
 const app = express();
 const PORT = 8080
